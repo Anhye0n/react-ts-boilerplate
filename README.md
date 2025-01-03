@@ -1,50 +1,44 @@
-# React + TypeScript + Vite
+# React TypeScript Styled-Components Boilerplate
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎉 **React + TypeScript + Styled-Components 보일러플레이트** 🎉  
+이 프로젝트는 React 애플리케이션 개발을 빠르게 시작하기 위해 설정된 템플릿입니다. TypeScript와 Styled-Components를 활용하여 타입 안정성과 스타일링 유연성을 제공합니다.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 프로젝트 구성
 
-## Expanding the ESLint configuration
+```text
+src/
+├── apis/             # API 요청 관련 코드
+│   └── utils/
+│       └── instance.ts  # Axios 인스턴스 설정
+├── assets/           # 정적 리소스 (이미지, 폰트 등)
+│   ├── fonts/
+│   │   └── fonts.css   # 웹 폰트 스타일
+│   └── react.svg       # React 로고
+├── components/       # 재사용 가능한 UI 컴포넌트
+│   └── temp.txt
+├── pages/            # 페이지 단위 컴포넌트
+│   └── index/
+│       └── Home.tsx    # 홈 페이지
+├── store/            # Redux Toolkit 관련 파일
+│   ├── store.ts       # Redux 스토어 설정
+│   └── userSlice.ts   # Redux 슬라이스 예제
+├── styles/           # 글로벌 및 테마 스타일
+│   ├── theme/
+│   │   └── Theme.ts    # Styled-Components 테마 설정
+│   └── GlobalStyle.tsx # 글로벌 스타일 설정
+├── utils/            # 유틸리티 함수 모음
+│   └── temp.txt
+├── App.tsx           # 메인 앱 컴포넌트
+├── main.tsx          # 진입 파일
+└── vite-env.d.ts     # Vite 환경 설정
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react';
+## 🛠️ 설치 및 실행
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-});
-```
+### 1. 레포지토리 클론
+```zsh
+git clone https://github.com/Anhye0n/react-ts-boilerplate.git
