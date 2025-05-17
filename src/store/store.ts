@@ -2,7 +2,7 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
-import userSlice, { UserInfo } from '@store/userSlice.ts';
+import userSlice, { UserInfo } from '@store/userSlice';
 
 export interface RootState {
     userInfo: UserInfo

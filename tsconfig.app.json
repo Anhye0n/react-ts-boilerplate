@@ -25,14 +25,29 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"],
-      "@components/*": ["components/*"],
-      "@pages/*": ["pages/*"],
-      "@assets/*": ["assets/*"],
-      "@store/*": ["store/*"],
-      "@plugins/*": ["plugins/*"],
-      "@apis/*": ["apis/*"]
+      "@/*": [
+        "./*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@pages/*": [
+        "./src/pages/*"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
+      ],
+      "@store/*": [
+        "./src/store/*"
+      ],
+      "@plugins/*": [
+        "./src/plugins/*"
+      ],
+      "@apis/*": [
+        "./src/apis/*"
+      ]
     },
     "allowSyntheticDefaultImports": true
   },
